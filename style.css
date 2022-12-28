@@ -45,12 +45,7 @@ body{
 
 
   .dark-light i{
-    position: absolute;
-  }
-
-  .dark-light i.moon{
-    opacity: 0;
-    pointer-events: none ;
+    background-color: black;
   }
 section{
     padding: 2rem 9%;
@@ -103,15 +98,28 @@ section{
     color: var(--box-shadow);
 
 }
+.header{
+    height: 80px;
+}
+
+
+
 .header .logo i{
     
     color: var(--orange);
 
 }
+.navbar{
+    text-align: center;
+    justify-content: center;
+    margin-top: 45px;
+    height: 20px;
+}
 .header .navbar a{
     font-size: 1.7rem;
     margin: 0 1rem;
     color: var(--black);
+    font-weight: 600;
 
 }
 .header .navbar a:hover{
@@ -538,7 +546,7 @@ section{
 
 .blogs .box-container .box .content .icons a p{
     line-height:1.7rem;
-    color:var(--light-color);
+    color:var(--black);
     font-size:1.5rem;
     padding:.5rem;
     
