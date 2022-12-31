@@ -30,6 +30,19 @@ let x = document.getElementById('out');
                 })
             }
 
+            
+const Container = document.querySelector(".container");
+const closeBtn = document.querySelector(".container .close");
+
+function loadCoupon(){
+  Container.classList.add("active");
+  // document.getElementsByClassName('.container').style.display = 'block';
+  // document.getElementById('body').style.opacity='0'
+}
+
+function closeCoupon(){
+  Container.classList.remove("active");
+}
 
 var cpnBtn = document.getElementById("cpnBtn");
 var cpnCode = document.getElementById("cpnCode");
@@ -41,7 +54,6 @@ cpnBtn.onclick = function(){
 
   }, 3000);
 }
-
 
 
 

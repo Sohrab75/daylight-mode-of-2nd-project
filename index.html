@@ -106,27 +106,25 @@
         <a href="#" class="btn" >shop now</a>
         
     </div>
-
-    
-
-       
-
-</section>
 <!-- Coupon code  -->
-<div class="container">
-    <div class="coupon_code">
-        <i class="fas fa-shopping-basket logo">S-Mart</i>
-        <h3>20% flat discount on all grocery items <br>use HDFC credit card</h3>
-        
-        <div class="coupon-row">
-            <span id="cpnCode">FLAT20</span>
-            <span id="cpnBtn">copy code</span>
+    <div class="container">
+        <button class="close" onClick="closeCoupon()">&times;</button>
+        <div class="coupon_code">
+              <i class="fas fa-shopping-basket logo">S-Mart</i>
+            <h3>20% flat discount on all grocery items <br>use HDFC credit card</h3>
+            
+            <div class="coupon-row">
+                <span id="cpnCode">FLAT20</span>
+                <span id="cpnBtn">copy code</span>
+            </div>
+            <p>valid till 1st Jan 2023</p>
+            <div class="circle1"></div>
+            <div class="circle2"></div>
         </div>
-        <p>valid till 1st Jan 2023</p>
-        <div class="circle1"></div>
-        <div class="circle2"></div>
     </div>
-</div>
+</section>
+
+
 
 
 
@@ -469,6 +467,12 @@
 
 <!-- home section end  -->
 
-    <script src="js/script.js"></script>
+    <script src="js/script.js">
+        
+    </script>
+    <script>
+        window.onload = loadCoupon()
+    </script>
+   
 </body>
 </html>
